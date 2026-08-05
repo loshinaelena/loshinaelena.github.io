@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -40,22 +39,7 @@
 
 <header class="header">
 
-    <div class="container">
-
-        <a class="logo" href="#">
-            Elena.
-        </a>
-
-        <nav class="navigation">
-
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#process">Process</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-    </div>
+    
 
 </header>
 
