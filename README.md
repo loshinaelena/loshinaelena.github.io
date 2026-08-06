@@ -1,167 +1,123 @@
-<html lang="en">
-<head>
+---
+layout: default
+---
 
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-    <meta charset="UTF-8">
+[Link to another page](./another-page.html).
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+There should be whitespace between paragraphs.
 
-    <title>Elena Loshina — Product Designer</title>
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-    <meta
+# Header 1
 
-        name="description"
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-        content="Product Designer Portfolio">
+## Header 2
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+### Header 3
 
-    <link
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
 
-        rel="stylesheet">
+#### Header 4
 
-    <link rel="stylesheet" href="assets/css/variables.css">
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
 
-    <link rel="stylesheet" href="assets/css/reset.css">
+##### Header 5
 
-    <link rel="stylesheet" href="assets/css/layout.css">
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+###### Header 6
 
-</head>
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
-<body>
+### There's a horizontal rule below this.
 
-<header class="header">
+* * *
 
-    
+### Here is an unordered list:
 
-</header>
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
 
-<main>
+### And an ordered list:
 
-    <section class="hero">
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
 
-        <div class="container hero-grid">
+### And a nested list:
 
-            <div class="hero-content">
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
 
-                <span class="eyebrow">
-                    Product Designer
-                </span>
+### Small image
 
-                <h1>
-                    Designing thoughtful
-                    digital products
-                    for people.
-                </h1>
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-                <p>
-                    I design user-centered digital experiences
-                    combining product thinking, UX research,
-                    interface design and prototyping.
-                </p>
+### Large image
 
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="button primary">
-                        View Projects
-                    </a>
-
-                    <a href="resume.pdf" class="button secondary">
-                        Download Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-preview">
-
-                <!-- Illustration / Portrait -->
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="projects">
-
-        <div class="container">
-
-            <h2>Selected Projects</h2>
-
-            <div class="projects-grid">
-
-                <!-- Card -->
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="about">
-
-        <div class="container">
-
-            <h2>About</h2>
-
-        </div>
-
-    </section>
-
-    <section id="process">
-
-        <div class="container">
-
-            <h2>Process</h2>
-
-        </div>
-
-    </section>
-
-    <section id="testimonials">
-
-        <div class="container">
-
-            <h2>Testimonials</h2>
-
-        </div>
-
-    </section>
-
-    <section id="contact">
-
-        <div class="container">
-
-            <h2>Let's work together</h2>
-
-        </div>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <div class="container">
-
-        <p>
-            © 2026 Elena Loshina
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="assets/js/app.js"></script>
-
-</body>
-</html>
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
