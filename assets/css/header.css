@@ -1,0 +1,248 @@
+/* ==========================================================
+   HEADER
+   Elena Loshina Portfolio
+========================================================== */
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: var(--navbar-height);
+
+    z-index: var(--z-header);
+
+    display: flex;
+    align-items: center;
+
+    transition: var(--transition);
+
+}
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.header .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+/* ===========================================
+   SCROLLED HEADER
+=========================================== */
+
+.header.scrolled {
+
+    background: var(--glass-background);
+
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+
+    border-bottom: 1px solid var(--color-border);
+
+}
+
+/* ===========================================
+   LOGO
+=========================================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 18px;
+
+    font-weight: var(--font-bold);
+
+    letter-spacing: -.03em;
+
+    transition: var(--transition);
+
+}
+
+.logo:hover {
+
+    opacity: .8;
+
+}
+
+/* ===========================================
+   LOGO DOT
+=========================================== */
+
+.logo-dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: var(--color-accent);
+
+}
+
+/* ===========================================
+   NAVIGATION
+=========================================== */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+/* ===========================================
+   LINKS
+=========================================== */
+
+.navigation a {
+
+    position: relative;
+
+    font-size: 15px;
+
+    font-weight: var(--font-medium);
+
+    color: var(--color-text-secondary);
+
+    transition: var(--transition);
+
+}
+
+/* ===========================================
+   HOVER
+=========================================== */
+
+.navigation a:hover {
+
+    color: var(--color-text);
+
+}
+
+/* underline animation */
+
+.navigation a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--color-accent);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: .25s ease;
+
+}
+
+.navigation a:hover::after {
+
+    transform: scaleX(1);
+
+}
+
+/* ===========================================
+   HEADER ACTIONS
+=========================================== */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+/* ===========================================
+   MOBILE BUTTON
+=========================================== */
+
+.menu-button {
+
+    display: none;
+
+    width: 44px;
+
+    height: 44px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+}
+
+/* ===========================================
+   STICKY EFFECT
+=========================================== */
+
+.header.hide {
+
+    transform: translateY(-100%);
+
+}
+
+/* ===========================================
+   ANIMATION
+=========================================== */
+
+.header {
+
+    animation: fadeDown .8s ease;
+
+}
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
