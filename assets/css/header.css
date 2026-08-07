@@ -1,11 +1,6 @@
 /* ==========================================================
    HEADER
-   Elena Loshina Portfolio
 ========================================================== */
-
-/* ===========================================
-   HEADER
-=========================================== */
 
 .header {
 
@@ -16,233 +11,112 @@
 
     width: 100%;
 
-    height: var(--navbar-height);
-
     z-index: var(--z-header);
 
-    display: flex;
-    align-items: center;
+    padding: 22px 0;
 
-    transition: var(--transition);
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,.96) 0%,
+            rgba(255,255,255,.88) 45%,
+            rgba(255,255,255,.60) 70%,
+            rgba(255,255,255,0) 100%
+        );
 
-}
-
-/* ===========================================
-   CONTAINER
-=========================================== */
-
-.header .container {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    width: 100%;
-}
-
-/* ===========================================
-   SCROLLED HEADER
-=========================================== */
-
-.header.scrolled {
-
-    background: var(--glass-background);
-
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
-
-    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
 }
 
-/* ===========================================
-   LOGO
-=========================================== */
+/* ==========================================================
+   LAYOUT
+========================================================== */
 
-.logo {
+.header-content{
 
-    display: flex;
+    display:grid;
 
-    align-items: center;
+    grid-template-columns:1fr auto 1fr;
 
-    gap: 12px;
-
-    font-size: 18px;
-
-    font-weight: var(--font-bold);
-
-    letter-spacing: -.03em;
-
-    transition: var(--transition);
+    align-items:center;
 
 }
 
-.logo:hover {
+.header-left{
 
-    opacity: .8;
+    display:flex;
 
-}
-
-/* ===========================================
-   LOGO DOT
-=========================================== */
-
-.logo-dot {
-
-    width: 10px;
-
-    height: 10px;
-
-    border-radius: 50%;
-
-    background: var(--color-accent);
+    justify-content:flex-start;
 
 }
 
-/* ===========================================
-   NAVIGATION
-=========================================== */
+.header-center{
 
-.navigation {
+    display:flex;
 
-    display: flex;
-
-    align-items: center;
-
-    gap: 40px;
+    justify-content:center;
 
 }
 
-/* ===========================================
-   LINKS
-=========================================== */
+.header-right{
 
-.navigation a {
+    display:flex;
 
-    position: relative;
+    justify-content:flex-end;
 
-    font-size: 15px;
-
-    font-weight: var(--font-medium);
-
-    color: var(--color-text-secondary);
-
-    transition: var(--transition);
+    gap:16px;
 
 }
 
-/* ===========================================
-   HOVER
-=========================================== */
+/* ==========================================================
+   AVATAR
+========================================================== */
 
-.navigation a:hover {
+.header-avatar{
 
-    color: var(--color-text);
+    width:52px;
 
-}
+    height:52px;
 
-/* underline animation */
+    border-radius:50%;
 
-.navigation a::after {
+    object-fit:cover;
 
-    content: "";
+    border:2px solid rgba(255,255,255,.95);
 
-    position: absolute;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
 
-    left: 0;
-    bottom: -6px;
-
-    width: 100%;
-    height: 2px;
-
-    background: var(--color-accent);
-
-    transform: scaleX(0);
-
-    transform-origin: left;
-
-    transition: .25s ease;
+    transition:var(--transition);
 
 }
 
-.navigation a:hover::after {
+.header-avatar:hover{
 
-    transform: scaleX(1);
-
-}
-
-/* ===========================================
-   HEADER ACTIONS
-=========================================== */
-
-.header-actions {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
+    transform:scale(1.05);
 
 }
 
-/* ===========================================
-   MOBILE BUTTON
-=========================================== */
+/* ==========================================================
+   TELEGRAM BUTTON
+========================================================== */
 
-.menu-button {
+.button-telegram{
 
-    display: none;
+    background:#229ED9;
 
-    width: 44px;
+    color:#ffffff;
 
-    height: 44px;
-
-    align-items: center;
-
-    justify-content: center;
-
-    cursor: pointer;
+    border:none;
 
 }
 
-/* ===========================================
-   STICKY EFFECT
-=========================================== */
+.button-telegram:hover{
 
-.header.hide {
+    background:#1B8CC5;
 
-    transform: translateY(-100%);
+    transform:translateY(-2px);
 
-}
-
-/* ===========================================
-   ANIMATION
-=========================================== */
-
-.header {
-
-    animation: fadeDown .8s ease;
-
-}
-
-@keyframes fadeDown {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(-20px);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
+    box-shadow:var(--shadow-md);
 
 }
