@@ -11,18 +11,16 @@
 
     width: 100%;
 
-    z-index: var(--z-header);
+    z-index: 1000;
 
-    padding: 22px 0;
+    padding: 20px 48px;
 
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(255,255,255,.96) 0%,
-            rgba(255,255,255,.88) 45%,
-            rgba(255,255,255,.60) 70%,
-            rgba(255,255,255,0) 100%
-        );
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,.96),
+        rgba(255,255,255,.78),
+        rgba(255,255,255,0)
+    );
 
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
@@ -30,10 +28,12 @@
 }
 
 /* ==========================================================
-   LAYOUT
+   CONTENT
 ========================================================== */
 
 .header-content{
+
+    width:100%;
 
     display:grid;
 
