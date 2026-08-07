@@ -1,1 +1,205 @@
+/* ==========================================================
+   DESIGN SYSTEM
+   Elena Loshina Portfolio
+   ========================================================== */
+
+:root {
+
+    /* ======================================================
+       COLORS
+    ====================================================== */
+
+    --color-background: #FFFFFF;
+    --color-surface: #F8F8F8;
+    --color-card: #FFFFFF;
+
+    --color-text: #18181B;
+    --color-text-secondary: #52525B;
+    --color-text-muted: #A1A1AA;
+
+    --color-border: #E4E4E7;
+    --color-divider: #F1F1F2;
+
+    /* Accent */
+
+    --color-accent: #2563EB;
+    --color-accent-hover: #1D4ED8;
+    --color-accent-light: #DBEAFE;
+
+    /* Status */
+
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #DC2626;
+
+    /* ======================================================
+       TYPOGRAPHY
+    ====================================================== */
+
+    --font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    /* Hero */
+
+    --font-size-display: clamp(64px, 7vw, 96px);
+
+    /* Titles */
+
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-h3: 32px;
+    --font-size-h4: 24px;
+
+    /* Body */
+
+    --font-size-xl: 22px;
+    --font-size-lg: 20px;
+    --font-size-md: 18px;
+    --font-size-sm: 16px;
+    --font-size-xs: 14px;
+
+    /* Font Weight */
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-black: 800;
+
+    /* Line Height */
+
+    --line-tight: 1.1;
+    --line-heading: 1.2;
+    --line-body: 1.7;
+
+    /* Letter Spacing */
+
+    --tracking-tight: -.04em;
+    --tracking-normal: 0;
+    --tracking-wide: .03em;
+
+    /* ======================================================
+       SPACING
+    ====================================================== */
+
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-64: 64px;
+    --space-80: 80px;
+    --space-96: 96px;
+    --space-120: 120px;
+    --space-160: 160px;
+
+    /* ======================================================
+       LAYOUT
+    ====================================================== */
+
+    --container-width: 1240px;
+    --container-padding: 32px;
+
+    --section-spacing: 140px;
+
+    --navbar-height: 84px;
+
+    /* ======================================================
+       BORDER RADIUS
+    ====================================================== */
+
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 20px;
+    --radius-xl: 28px;
+    --radius-round: 999px;
+
+    /* ======================================================
+       SHADOWS
+    ====================================================== */
+
+    --shadow-xs:
+        0 1px 2px rgba(0,0,0,.04);
+
+    --shadow-sm:
+        0 6px 18px rgba(0,0,0,.05);
+
+    --shadow-md:
+        0 16px 40px rgba(0,0,0,.08);
+
+    --shadow-lg:
+        0 30px 80px rgba(0,0,0,.12);
+
+    /* ======================================================
+       GLASS EFFECT
+    ====================================================== */
+
+    --glass-background:
+        rgba(255,255,255,.72);
+
+    --glass-border:
+        rgba(255,255,255,.55);
+
+    --glass-blur: 18px;
+
+    /* ======================================================
+       TRANSITIONS
+    ====================================================== */
+
+    --transition-fast:
+        .18s ease;
+
+    --transition:
+        .35s cubic-bezier(.22,.61,.36,1);
+
+    --transition-slow:
+        .6s cubic-bezier(.22,.61,.36,1);
+
+    /* ======================================================
+       Z-INDEX
+    ====================================================== */
+
+    --z-header: 1000;
+    --z-dropdown: 2000;
+    --z-modal: 3000;
+    --z-loader: 9999;
+  /* ==========================================================
+   DARK MODE
+========================================================== */
+
+[data-theme="dark"] {
+
+    --color-background: #09090B;
+    --color-surface: #111113;
+    --color-card: #18181B;
+
+    --color-text: #FAFAFA;
+    --color-text-secondary: #D4D4D8;
+    --color-text-muted: #71717A;
+
+    --color-border: #27272A;
+    --color-divider: #18181B;
+
+    --glass-background:
+        rgba(24,24,27,.75);
+
+    --glass-border:
+        rgba(255,255,255,.06);
+
+    --shadow-sm:
+        0 10px 24px rgba(0,0,0,.35);
+
+    --shadow-md:
+        0 20px 60px rgba(0,0,0,.45);
+
+}
 
