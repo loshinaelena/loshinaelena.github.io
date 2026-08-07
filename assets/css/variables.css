@@ -45,11 +45,11 @@
 
     /* Hero */
 
-    --font-size-display: clamp(64px, 7vw, 96px);
+    --font-size-display: clamp(56px, 7vw, 96px);
 
     /* Titles */
 
-    --font-size-h1: 56px;
+    --font-size-h1: 64px;
     --font-size-h2: 48px;
     --font-size-h3: 32px;
     --font-size-h4: 24px;
