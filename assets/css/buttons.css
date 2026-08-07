@@ -1,0 +1,196 @@
+/* ==========================================================
+   BUTTONS
+   Elena Loshina Portfolio
+========================================================== */
+
+/* ==========================================================
+   BASE BUTTON
+========================================================== */
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    height: 52px;
+
+    padding: 0 28px;
+
+    border-radius: var(--radius-round);
+
+    font-size: var(--font-size-sm);
+
+    font-weight: var(--font-semibold);
+
+    letter-spacing: -.02em;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    white-space: nowrap;
+
+    transition: var(--transition);
+
+}
+
+/* ==========================================================
+   PRIMARY
+========================================================== */
+
+.button-primary {
+
+    color: white;
+
+    background: var(--color-text);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.button-primary:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.button-primary:active {
+
+    transform: translateY(0);
+
+}
+
+/* ==========================================================
+   SECONDARY
+========================================================== */
+
+.button-secondary {
+
+    color: var(--color-text);
+
+    background: var(--color-card);
+
+    border: 1px solid var(--color-border);
+
+}
+
+.button-secondary:hover {
+
+    background: var(--color-surface);
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================================================
+   OUTLINE
+========================================================== */
+
+.button-outline {
+
+    color: var(--color-text);
+
+    background: transparent;
+
+    border: 1px solid var(--color-border);
+
+}
+
+.button-outline:hover {
+
+    border-color: var(--color-text);
+
+}
+
+/* ==========================================================
+   GHOST
+========================================================== */
+
+.button-ghost {
+
+    color: var(--color-text);
+
+    background: transparent;
+
+}
+
+.button-ghost:hover {
+
+    background: var(--color-surface);
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.button-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+}
+
+/* ==========================================================
+   LARGE
+========================================================== */
+
+.button-large {
+
+    height: 60px;
+
+    padding: 0 36px;
+
+    font-size: var(--font-size-md);
+
+}
+
+/* ==========================================================
+   SMALL
+========================================================== */
+
+.button-small {
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================================
+   DISABLED
+========================================================== */
+
+.button:disabled {
+
+    opacity: .5;
+
+    pointer-events: none;
+
+}
+
+/* ==========================================================
+   FOCUS
+========================================================== */
+
+.button:focus-visible {
+
+    outline: 3px solid rgba(37,99,235,.25);
+
+    outline-offset: 3px;
+
+}
