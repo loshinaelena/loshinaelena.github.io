@@ -45,7 +45,31 @@
 
     /* Hero */
 
-    --font-size-display: clamp(64px, 7vw, 96px);
+    .hero-title {
+    max-width: 850px;
+
+    margin: 0 0 28px;
+
+    font-size: clamp(44px, 5vw, 64px);
+
+    line-height: 1.05;
+
+    letter-spacing: -0.045em;
+
+    font-weight: 700;
+}
+
+.hero-description {
+    max-width: 620px;
+
+    margin: 0 auto 40px;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #737373;
+}
 
     /* Titles */
 
