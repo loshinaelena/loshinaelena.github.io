@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Orchidea Pro";
+
+    src: url("../fonts/OrchideaPro-Medium.otf")
+         format("opentype");
+
+    font-weight: 500;
+
+    font-style: normal;
+
+    font-display: swap;
+}
