@@ -36,12 +36,18 @@
        TYPOGRAPHY
     ====================================================== */
 
-    --font-family:
-        "Inter",
+    :root {
+
+    --font-heading: "Orchidea Pro", serif;
+
+    --font-body:
+        Inter,
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         sans-serif;
+
+}
 
     /* Hero */
 
