@@ -64,8 +64,23 @@
 ========================================================== */
 
 .hero-title {
+
     font-family: var(--font-heading);
+
     font-weight: 500;
+
+    max-width: 900px;
+
+    margin: 0 auto 28px;
+
+    font-size: clamp(44px, 5vw, 64px);
+
+    line-height: 1.04;
+
+    letter-spacing: -0.035em;
+
+    color: var(--color-text);
+
 }
 
 
