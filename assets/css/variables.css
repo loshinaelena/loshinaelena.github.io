@@ -50,11 +50,11 @@
     .hero-title {
     max-width: 850px;
 
-    margin: 0 0 28px;
+    margin: 0 0 24px;
 
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(28px, 5vw, 44px);
 
-    line-height: 1.25;
+    line-height: 1.15;
 
     letter-spacing: -0.045em;
 
