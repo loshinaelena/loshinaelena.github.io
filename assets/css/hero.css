@@ -252,27 +252,27 @@
     width: 270px;
 
     left: 38%;
-    top: 35px;
+    top: 55px;
 }
 
 
 /* E-COMMERCE */
 
 .card-ecommerce {
-    width: 280px;
+    width: 300px;
 
     right: 0%;
-    top: 130px;
+    top: 150px;
 }
 
 
 /* COMPONENT LIBRARY */
 
 .card-components {
-    width: 255px;
+    width: 300x;
 
     left: 7%;
-    bottom: 15px;
+    bottom: 10px;
 }
 
 
@@ -282,7 +282,7 @@
     width: 270px;
 
     left: 38%;
-    bottom: 15px;
+    bottom: 10px;
 }
 
 
