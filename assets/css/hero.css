@@ -346,54 +346,29 @@
 }
 
 
-/* =========================================================
-   CARD HOVER
-========================================================= */
+/* =========================================
+   FLOATING CARDS ANIMATION
+========================================= */
 
-.portfolio-composition:hover
 .card-research {
-
-    transform:
-        translate(-5px, -8px)
-        rotate(-1deg);
+    animation: float-research 6s ease-in-out infinite;
 }
 
-
-.portfolio-composition:hover
 .card-stories {
-
-    transform:
-        translate(4px, -8px)
-        rotate(1deg);
+    animation: float-stories 7s ease-in-out infinite;
 }
 
-
-.portfolio-composition:hover
 .card-ecommerce {
-
-    transform:
-        translate(6px, -8px)
-        rotate(1deg);
+    animation: float-ecommerce 6.5s ease-in-out infinite;
 }
 
-
-.portfolio-composition:hover
 .card-components {
-
-    transform:
-        translate(-5px, -8px)
-        rotate(1deg);
+    animation: float-components 7.5s ease-in-out infinite;
 }
 
-
-.portfolio-composition:hover
 .card-button {
-
-    transform:
-        translate(4px, -7px)
-        rotate(-1deg);
+    animation: float-button 6s ease-in-out infinite;
 }
-
 
 /* =========================================================
    FLOATING ANIMATIONS
@@ -480,64 +455,72 @@
             translateY(-7px);
     }
 }
+/* =========================================
+   KEYFRAMES
+========================================= */
 
+@keyframes float-research {
 
-/* =========================================================
-   HOVER LABEL
-========================================================= */
+    0%,
+    100% {
+        transform: translateY(0) rotate(-1deg);
+    }
 
-.composition-cursor {
-
-    position: absolute;
-
-    left: 50%;
-    top: 50%;
-
-    z-index: 100;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    padding: 11px 16px;
-
-    border-radius: 999px;
-
-    background: #18181A;
-
-    color: #FFFFFF;
-
-    font-family:
-        var(--font-body,
-        Arial,
-        sans-serif);
-
-    font-size: 13px;
-
-    opacity: 0;
-
-    transform:
-        translate(-50%, -50%)
-        scale(.9);
-
-    transition:
-        opacity .3s ease,
-        transform .3s ease;
-
-    pointer-events: none;
+    50% {
+        transform: translateY(-12px) rotate(-2deg);
+    }
 }
 
 
-.portfolio-composition:hover
-.composition-cursor {
+@keyframes float-stories {
 
-    opacity: 1;
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
 
-    transform:
-        translate(-50%, -50%)
-        scale(1);
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+}
+
+
+@keyframes float-ecommerce {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(-14px) rotate(2deg);
+    }
+}
+
+
+@keyframes float-components {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(-11px) rotate(0deg);
+    }
+}
+
+
+@keyframes float-button {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 
