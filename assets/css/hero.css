@@ -163,7 +163,8 @@
     width: 100%;
     height: auto;
 
-    background: transparent;
+    /* Убираем белую подложку изображения */
+    mix-blend-mode: multiply;
 }
 
 
