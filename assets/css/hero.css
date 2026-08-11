@@ -115,25 +115,260 @@
 
 }
 
-
-/* ==========================================================
+/* =========================================
    HERO VISUAL
-========================================================== */
+========================================= */
 
-.hero-visual {
-
+.portfolio-hero-visual {
     width: 100%;
+    padding: 80px 0 120px;
+    overflow: hidden;
+}
 
-    max-width: 1200px;
+
+/* =========================================
+   COMPOSITION
+========================================= */
+
+.portfolio-composition {
+    position: relative;
+
+    display: block;
+
+    width: min(1200px, calc(100% - 80px));
+    height: 720px;
 
     margin: 0 auto;
 
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MAIN LAPTOP
+========================================= */
+
+.composition-laptop {
+    position: absolute;
+
+    width: 72%;
+
+    left: 14%;
+    top: 120px;
+
+    z-index: 1;
+}
+
+
+.composition-laptop img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.composition-card {
+    position: absolute;
+
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+
+.composition-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   CARD LABEL
+========================================= */
+
+.card-label {
+    position: absolute;
+
+    left: 0;
+    top: -24px;
+
+    color: #777;
+
+    font-family: var(--font-body, Arial, sans-serif);
+
+    font-size: 13px;
+    line-height: 1;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================
+   UX RESEARCH
+========================================= */
+
+.card-research {
+    width: 190px;
+
+    left: 10%;
+    top: 45px;
+
+    z-index: 10;
+}
+
+
+.card-research img {
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   STORIES
+========================================= */
+
+.card-stories {
+    width: 200px;
+
+    left: 36%;
+    top: 70px;
+
+    z-index: 8;
+}
+
+
+.card-stories img {
+    border-radius: 14px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================
+   E-COMMERCE
+========================================= */
+
+.card-ecommerce {
+    width: 190px;
+
+    right: 7%;
+    top: 180px;
+
+    z-index: 10;
+}
+
+
+.card-ecommerce img {
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================
+   COMPONENT LIBRARY
+========================================= */
+
+.card-components {
+    width: 205px;
+
+    left: 10%;
+    bottom: 40px;
+
+    z-index: 10;
+}
+
+
+.card-components img {
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.card-button {
+    width: 190px;
+
+    left: 36%;
+    bottom: 50px;
+
+    z-index: 9;
+}
+
+
+.card-button img {
+    border-radius: 12px;
+
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================
+   HOVER LABEL
+========================================= */
+
+.composition-cursor {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    z-index: 30;
+
     display: flex;
-
-    flex-direction: column;
-
     align-items: center;
+    gap: 8px;
 
+    padding: 10px 16px;
+
+    border-radius: 100px;
+
+    color: white;
+    background: #18181a;
+
+    font-family: var(--font-body, Arial, sans-serif);
+
+    font-size: 13px;
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.9);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+    pointer-events: none;
+}
+
+
+.portfolio-composition:hover .composition-cursor {
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
 }
 
 
