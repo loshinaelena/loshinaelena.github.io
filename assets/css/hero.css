@@ -192,7 +192,7 @@
     position: relative;
 
     width: min(1200px, calc(100% - 40px));
-    height: 820px;
+    height: 900px;
 
     margin: 0 auto;
 
@@ -212,7 +212,7 @@
     width: 98%;
 
     left: 1%;
-    top: 70px;
+    top: 100px;
 
     z-index: 1;
 
@@ -246,7 +246,7 @@
 /* UX RESEARCH */
 
 .card-research {
-    width: 240px;
+    width: 270px;
 
     left: 7%;
     top: 10px;
@@ -256,7 +256,7 @@
 /* STORIES */
 
 .card-stories {
-    width: 250px;
+    width: 270px;
 
     left: 36%;
     top: 35px;
@@ -266,7 +266,7 @@
 /* E-COMMERCE */
 
 .card-ecommerce {
-    width: 240px;
+    width: 280px;
 
     right: 4%;
     top: 130px;
@@ -279,17 +279,17 @@
     width: 255px;
 
     left: 7%;
-    bottom: 20px;
+    bottom: 15px;
 }
 
 
 /* BUTTON */
 
 .card-button {
-    width: 235px;
+    width: 270px;
 
     left: 36%;
-    bottom: 25px;
+    bottom: 15px;
 }
 
 
