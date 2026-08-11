@@ -494,3 +494,96 @@
     }
 
 }
+
+/* =========================================
+   FLOATING ANIMATION
+========================================= */
+
+.card-research {
+    animation: floatResearch 6s ease-in-out infinite;
+}
+
+.card-stories {
+    animation: floatStories 7s ease-in-out infinite;
+}
+
+.card-ecommerce {
+    animation: floatEcommerce 6.5s ease-in-out infinite;
+}
+
+.card-components {
+    animation: floatComponents 7.5s ease-in-out infinite;
+}
+
+.card-button {
+    animation: floatButton 6s ease-in-out infinite;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes floatResearch {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(-2deg);
+    }
+}
+
+
+@keyframes floatStories {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+}
+
+
+@keyframes floatEcommerce {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(-14px) rotate(2deg);
+    }
+}
+
+
+@keyframes floatComponents {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(-11px) rotate(0deg);
+    }
+}
+
+
+@keyframes floatButton {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
