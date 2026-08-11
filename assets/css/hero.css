@@ -205,7 +205,7 @@
     width: 98%;
 
     left: 1%;
-    top: 400px;
+    top: 200px;
 
     z-index: 1;
 
@@ -251,7 +251,7 @@
 .card-stories {
     width: 270px;
 
-    left: 40%;
+    left: 38%;
     top: 35px;
 }
 
@@ -272,7 +272,7 @@
     width: 255px;
 
     left: 7%;
-    bottom: 25px;
+    bottom: 15px;
 }
 
 
@@ -281,8 +281,8 @@
 .card-button {
     width: 270px;
 
-    left: 40%;
-    bottom: 25px;
+    left: 38%;
+    bottom: 15px;
 }
 
 
