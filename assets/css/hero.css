@@ -155,13 +155,6 @@
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
 .card-label {
 
     position: absolute;
@@ -249,7 +242,7 @@
     width: 270px;
 
     left: 7%;
-    top: 10px;
+    top: 0px;
 }
 
 
@@ -258,7 +251,7 @@
 .card-stories {
     width: 270px;
 
-    left: 36%;
+    left: 50%;
     top: 35px;
 }
 
@@ -268,7 +261,7 @@
 .card-ecommerce {
     width: 280px;
 
-    right: 4%;
+    right: 0%;
     top: 130px;
 }
 
@@ -288,7 +281,7 @@
 .card-button {
     width: 270px;
 
-    left: 36%;
+    left: 50%;
     bottom: 15px;
 }
 
