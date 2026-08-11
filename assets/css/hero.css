@@ -1,96 +1,11 @@
 /* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    width: 100%;
-    padding: 70px 0 120px;
-    overflow: hidden;
-}
-
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
-.hero-content {
-    width: min(900px, calc(100% - 40px));
-    margin: 0 auto;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   TITLE
-========================================================= */
-
-.hero-title {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    color: var(--color-text, #1E1E1E);
-
-    font-family:
-        var(--font-heading,
-        "Orchidea Pro",
-        sans-serif);
-
-    font-size: clamp(42px, 5vw, 68px);
-
-    font-weight: 500;
-
-    line-height: 0.98;
-
-    letter-spacing: -0.035em;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.hero-description {
-    max-width: 680px;
-
-    margin: 30px auto 0;
-
-    color: var(
-        --color-text-secondary,
-        #777777
-    );
-
-    font-family:
-        var(--font-body,
-        Arial,
-        sans-serif);
-
-    font-size: 18px;
-
-    line-height: 1.55;
-}
-
-
-/* =========================================================
-   HERO BUTTON
-========================================================= */
-
-.hero-button {
-    display: inline-flex;
-
-    margin-top: 36px;
-}
-
-
-/* =========================================================
    HERO VISUAL
 ========================================================= */
 
 .hero-visual {
     width: 100%;
-
-    margin-top: 90px;
+    margin-top: 70px;
+    overflow: visible;
 }
 
 
@@ -99,37 +14,27 @@
 ========================================================= */
 
 .hero-skills {
-
     display: flex;
-
     justify-content: center;
     align-items: center;
+    gap: 14px;
 
-    flex-wrap: wrap;
-
-    gap: 13px;
-
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 
     color: #888888;
 
-    font-family:
-        var(--font-body,
-        Arial,
-        sans-serif);
+    font-family: var(--font-body, Arial, sans-serif);
 
     font-size: 13px;
-
     line-height: 1;
 
     letter-spacing: 0.04em;
-
     text-transform: uppercase;
 }
 
 
 /* =========================================================
-   PORTFOLIO COMPOSITION
+   MAIN COMPOSITION
 ========================================================= */
 
 .portfolio-composition {
@@ -138,39 +43,36 @@
 
     display: block;
 
-    width: min(
-        1200px,
-        calc(100% - 80px)
-    );
-
-    height: 720px;
+    width: 1100px;
+    height: 680px;
 
     margin: 0 auto;
 
     text-decoration: none;
 
     cursor: pointer;
+
+    overflow: visible;
 }
 
 
 /* =========================================================
-   MAIN LAPTOP
+   LAPTOP
 ========================================================= */
 
 .composition-laptop {
 
     position: absolute;
 
-    left: 14%;
-    top: 120px;
+    left: 7%;
+    top: 90px;
 
-    width: 72%;
+    width: 86%;
 
     z-index: 1;
 
     transition:
-        transform
-        0.8s
+        transform 0.8s
         cubic-bezier(.22, 1, .36, 1);
 }
 
@@ -182,24 +84,19 @@
     width: 100%;
     height: auto;
 
-    /*
-       Если laptop.png уже экспортирован
-       с прозрачным фоном — это оставляем.
-    */
-
     background: transparent;
 }
 
 
 /* =========================================================
-   ALL CARDS
+   COMMON CARD
 ========================================================= */
 
 .composition-card {
 
     position: absolute;
 
-    z-index: 5;
+    z-index: 10;
 
     pointer-events: none;
 
@@ -217,28 +114,28 @@
 
 
 /* =========================================================
-   LABEL
+   CARD LABELS
 ========================================================= */
 
 .card-label {
 
     position: absolute;
 
-    left: 0;
     top: -24px;
+    left: 0;
 
-    color: #777777;
+    color: #555555;
 
     font-family:
         var(--font-body,
         Arial,
         sans-serif);
 
-    font-size: 13px;
+    font-size: 12px;
 
     line-height: 1;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
 
     white-space: nowrap;
 }
@@ -250,12 +147,13 @@
 
 .card-research {
 
-    left: 9%;
-    top: 35px;
-
     width: 190px;
 
-    z-index: 10;
+    left: 10%;
+
+    top: 20px;
+
+    z-index: 20;
 
     animation:
         float-research
@@ -265,28 +163,19 @@
 }
 
 
-.card-research img {
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.14);
-}
-
-
 /* =========================================================
    STORIES
 ========================================================= */
 
 .card-stories {
 
-    left: 35%;
-    top: 65px;
-
     width: 200px;
 
-    z-index: 8;
+    left: 33%;
+
+    top: 52px;
+
+    z-index: 18;
 
     animation:
         float-stories
@@ -296,28 +185,19 @@
 }
 
 
-.card-stories img {
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 18px 45px
-        rgba(0, 0, 0, 0.13);
-}
-
-
 /* =========================================================
    E-COMMERCE
 ========================================================= */
 
 .card-ecommerce {
 
-    right: 7%;
-    top: 180px;
-
     width: 190px;
 
-    z-index: 10;
+    right: 6%;
+
+    top: 145px;
+
+    z-index: 20;
 
     animation:
         float-ecommerce
@@ -327,28 +207,19 @@
 }
 
 
-.card-ecommerce img {
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.15);
-}
-
-
 /* =========================================================
    COMPONENT LIBRARY
 ========================================================= */
 
 .card-components {
 
-    left: 9%;
-    bottom: 45px;
-
     width: 205px;
 
-    z-index: 10;
+    left: 10%;
+
+    bottom: 25px;
+
+    z-index: 20;
 
     animation:
         float-components
@@ -358,28 +229,19 @@
 }
 
 
-.card-components img {
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.14);
-}
-
-
 /* =========================================================
    BUTTON
 ========================================================= */
 
 .card-button {
 
-    left: 35%;
-    bottom: 50px;
-
     width: 190px;
 
-    z-index: 9;
+    left: 33%;
+
+    bottom: 42px;
+
+    z-index: 18;
 
     animation:
         float-button
@@ -389,37 +251,45 @@
 }
 
 
+/* =========================================================
+   CARD SHADOWS
+========================================================= */
+
+.card-research img,
+.card-stories img,
+.card-ecommerce img,
+.card-components img,
 .card-button img {
 
-    border-radius: 12px;
-
-    box-shadow:
-        0 16px 40px
-        rgba(0, 0, 0, 0.13);
+    filter:
+        drop-shadow(
+            0 18px 28px
+            rgba(0, 0, 0, 0.12)
+        );
 }
 
 
 /* =========================================================
-   HOVER — MAIN LAPTOP
+   LAPTOP HOVER
 ========================================================= */
 
 .portfolio-composition:hover
 .composition-laptop {
 
     transform:
-        scale(1.012);
+        scale(1.01);
 }
 
 
 /* =========================================================
-   HOVER — CARDS
+   CARD HOVER
 ========================================================= */
 
 .portfolio-composition:hover
 .card-research {
 
     transform:
-        translate(-5px, -10px)
+        translate(-5px, -8px)
         rotate(-1deg);
 }
 
@@ -437,7 +307,7 @@
 .card-ecommerce {
 
     transform:
-        translate(6px, -10px)
+        translate(6px, -8px)
         rotate(1deg);
 }
 
@@ -455,13 +325,100 @@
 .card-button {
 
     transform:
-        translate(3px, -7px)
+        translate(4px, -7px)
         rotate(-1deg);
 }
 
 
 /* =========================================================
-   HOVER CURSOR
+   FLOATING ANIMATIONS
+========================================================= */
+
+@keyframes float-research {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-1deg);
+    }
+
+    50% {
+        transform:
+            translateY(-10px)
+            rotate(-2deg);
+    }
+}
+
+
+@keyframes float-stories {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(1deg);
+    }
+
+    50% {
+        transform:
+            translateY(-8px)
+            rotate(0deg);
+    }
+}
+
+
+@keyframes float-ecommerce {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(1deg);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            rotate(2deg);
+    }
+}
+
+
+@keyframes float-components {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(1deg);
+    }
+
+    50% {
+        transform:
+            translateY(-9px)
+            rotate(0deg);
+    }
+}
+
+
+@keyframes float-button {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-7px);
+    }
+}
+
+
+/* =========================================================
+   HOVER LABEL
 ========================================================= */
 
 .composition-cursor {
@@ -471,7 +428,7 @@
     left: 50%;
     top: 50%;
 
-    z-index: 30;
+    z-index: 100;
 
     display: flex;
 
@@ -479,13 +436,13 @@
 
     gap: 8px;
 
-    padding: 10px 16px;
+    padding: 11px 16px;
 
-    border-radius: 100px;
-
-    color: #FFFFFF;
+    border-radius: 999px;
 
     background: #18181A;
+
+    color: #FFFFFF;
 
     font-family:
         var(--font-body,
@@ -494,13 +451,11 @@
 
     font-size: 13px;
 
-    line-height: 1;
-
     opacity: 0;
 
     transform:
         translate(-50%, -50%)
-        scale(.92);
+        scale(.9);
 
     transition:
         opacity .3s ease,
@@ -522,89 +477,19 @@
 
 
 /* =========================================================
-   FLOATING ANIMATIONS
+   TABLET
 ========================================================= */
 
-@keyframes float-research {
+@media (max-width: 1200px) {
 
-    0%,
-    100% {
-        transform:
-            translateY(0)
-            rotate(-1deg);
+    .portfolio-composition {
+
+        width:
+            calc(100% - 40px);
+
+        max-width: 1100px;
     }
 
-    50% {
-        transform:
-            translateY(-12px)
-            rotate(-2deg);
-    }
-}
-
-
-@keyframes float-stories {
-
-    0%,
-    100% {
-        transform:
-            translateY(0)
-            rotate(1deg);
-    }
-
-    50% {
-        transform:
-            translateY(-9px)
-            rotate(0deg);
-    }
-}
-
-
-@keyframes float-ecommerce {
-
-    0%,
-    100% {
-        transform:
-            translateY(0)
-            rotate(1deg);
-    }
-
-    50% {
-        transform:
-            translateY(-14px)
-            rotate(2deg);
-    }
-}
-
-
-@keyframes float-components {
-
-    0%,
-    100% {
-        transform:
-            translateY(0)
-            rotate(1deg);
-    }
-
-    50% {
-        transform:
-            translateY(-11px)
-            rotate(0deg);
-    }
-}
-
-
-@keyframes float-button {
-
-    0%,
-    100% {
-        transform:
-            translateY(0);
-    }
-
-    50% {
-        transform:
-            translateY(-8px);
-    }
 }
 
 
@@ -612,107 +497,14 @@
    MOBILE
 ========================================================= */
 
-@media (max-width: 900px) {
-
-    .hero {
-        padding-top: 50px;
-    }
-
-
-    .hero-title {
-
-        font-size:
-            clamp(38px, 8vw, 58px);
-    }
-
-
-    .hero-description {
-
-        font-size: 16px;
-    }
-
-
-    .portfolio-composition {
-
-        width:
-            calc(100% - 30px);
-
-        height: 560px;
-    }
-
-
-    .composition-laptop {
-
-        width: 82%;
-
-        left: 9%;
-
-        top: 120px;
-    }
-
-
-    .card-research {
-
-        left: 2%;
-
-        width: 150px;
-    }
-
-
-    .card-stories {
-
-        left: 31%;
-
-        width: 150px;
-    }
-
-
-    .card-ecommerce {
-
-        right: 1%;
-
-        width: 150px;
-    }
-
-
-    .card-components {
-
-        left: 3%;
-
-        width: 160px;
-
-        bottom: 20px;
-    }
-
-
-    .card-button {
-
-        left: 35%;
-
-        width: 150px;
-
-        bottom: 20px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .hero-content {
-
-        width:
-            calc(100% - 32px);
-    }
-
+@media (max-width: 700px) {
 
     .hero-skills {
 
-        font-size: 10px;
-
         gap: 8px;
 
-        margin-bottom: 25px;
+        font-size: 10px;
+
     }
 
 
@@ -720,15 +512,15 @@
 
         width: 100%;
 
-        height: 470px;
+        height: 500px;
     }
 
 
     .composition-laptop {
 
-        width: 94%;
+        width: 96%;
 
-        left: 3%;
+        left: 2%;
 
         top: 100px;
     }
@@ -736,7 +528,7 @@
 
     .card-research {
 
-        width: 115px;
+        width: 125px;
 
         left: 2%;
 
@@ -746,29 +538,29 @@
 
     .card-stories {
 
-        width: 120px;
+        width: 125px;
 
         left: 34%;
 
-        top: 50px;
+        top: 45px;
     }
 
 
     .card-ecommerce {
 
-        width: 115px;
+        width: 125px;
 
         right: 2%;
 
-        top: 130px;
+        top: 125px;
     }
 
 
     .card-components {
 
-        width: 125px;
+        width: 135px;
 
-        left: 3%;
+        left: 2%;
 
         bottom: 10px;
     }
@@ -776,11 +568,11 @@
 
     .card-button {
 
-        width: 120px;
+        width: 130px;
 
-        left: 37%;
+        left: 36%;
 
-        bottom: 10px;
+        bottom: 15px;
     }
 
 
@@ -795,27 +587,6 @@
     .composition-cursor {
 
         display: none;
-    }
-
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .composition-card {
-
-        animation: none !important;
-
-        transition: none !important;
-    }
-
-    .composition-laptop {
-
-        transition: none !important;
     }
 
 }
