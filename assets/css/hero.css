@@ -282,7 +282,7 @@
     width: 450px;
 
     left: 50%;
-    bottom: 50px;
+    bottom: 55px;
 }
 
 
@@ -514,6 +514,69 @@
     50% {
         transform: translateY(-8px);
     }
+}
+/* =========================================
+   HOVER BUTTON
+========================================= */
+
+.composition-hover-button {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 250px;
+
+    z-index: 100;
+
+    display: block;
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, -50%)
+        translateY(20px)
+        scale(0.92);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.45s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* IMAGE */
+
+.composition-hover-button img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    filter:
+        drop-shadow(
+            0 20px 35px
+            rgba(0, 0, 0, 0.18)
+        );
+}
+
+
+/* =========================================
+   SHOW BUTTON ON COMPOSITION HOVER
+========================================= */
+
+.portfolio-composition:hover
+.composition-hover-button {
+
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
 }
 
 
