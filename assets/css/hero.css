@@ -95,6 +95,93 @@
     margin-top: 0;
 }
 
+/* =========================================
+   HOVER BUTTON
+========================================= */
+
+.composition-hover {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+
+    border-radius: 999px;
+
+    background: #18191c;
+    color: #ffffff;
+
+    font-family: var(--font-body);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, -50%)
+        translateY(16px)
+        scale(.94);
+
+    pointer-events: none;
+
+    transition:
+        opacity .35s ease,
+        transform .45s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* Стрелка */
+
+.hover-arrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 17px;
+
+    transition:
+        transform .35s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.portfolio-composition:hover .composition-hover {
+
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
+}
+
+
+/* Движение стрелки */
+
+.portfolio-composition:hover .hover-arrow {
+    transform: translate(3px, -3px);
+}
+
 
 /* =========================================================
    HERO VISUAL — BELOW CONTENT
