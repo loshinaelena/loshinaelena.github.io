@@ -2,7 +2,7 @@
 
 Продуктовый дизайнер, решаю бизнес-задачи B2C сервисов, увлекаюсь AI технологиями и исследованиями пользователей
 
-<a href="CV Elena Loshina.pdf">
+<a href="https://www.figma.com/design/hmdsMG8NK7H1Y5J6Fpqe99/Elena-Loshina?node-id=0-1&t=wOwftS9FgXtrbVvX-1">
     Figma Portfolio  
 </a>
 <br>
